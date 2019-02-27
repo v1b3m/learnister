@@ -3,20 +3,41 @@
   }
   
   body {
-    font-family: Arial;
+    font-family: Arial, Arial, Helvetica, sans-serif;
     padding: 10px;
     background: #f1f1f1;
   }
   
-  /* Header/Blog Title */
+  /* Header Title */
   .header {
-    padding: 30px;
-    text-align: center;
+    padding: 20px 10px;
+    text-align: left;
     background: white;
+    overflow: hidden;
+  }
+
+  .header-right {
+    float: right;
+    width: 25%;
   }
   
   .header h1 {
     font-size: 50px;
+  }
+
+  .header img {
+      width: 100px;
+      height: 100px;
+      /* vertical-align: middle; */
+      float: left;
+  }
+
+  .header h1 {
+      position: relative;
+      /* top: 5px; */
+      left: 20px;
+
+      color:  #e51437;
   }
   
   /* Style the top navigation bar */
@@ -43,7 +64,7 @@
   
   /* Create two unequal columns that floats next to each other */
   /* Left column */
-  .leftcolumn {   
+  .leftcolumn, .header-left {   
     float: left;
     width: 75%;
   }
@@ -87,7 +108,7 @@
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
+    .leftcolumn, .rightcolumn, .header-left, .header-right {   
       width: 100%;
       padding: 0;
     }
