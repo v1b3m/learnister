@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to Learnister.</title>
+    <title>Home | Learnister.</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"     crossorigin="anonymous">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/contact-form.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -28,46 +30,124 @@
 
     <!-- The top navigation bar -->
     <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="#">Book a Class</a>
-        <a href="#">Test Prep</a>
-        <a href="#">Testimonials</a>
-        <a href="#" style="float:right">FAQ</a>
+        <a class="active" href="index.html">Home</a>
+        <a href="class.html">Book a Class</a>
+        <a href="tests.html">Test Prep</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="faq.html" style="float:right">FAQ</a>
+        <a style="float:right" href="contact.html">Contact Us</a>
     </div>
 
     <div class="row">
         <div class="leftcolumn">
             <!-- First card -->
             <div class="card">
+                <div class="section group">
+                    <div class="col span_2_of_3">
+                        <div class="banner"
+                            data-height="400"
+                            data-width="100%"
+                            data-slide-speed="900"
+                            data-autoslide="5000">
+                            <img src="images/chicago.jpg" class="slider">
+                            <img src="images/la.jpg" class="slider">
+                            <img src="images/ny.jpg" class="slider">
+                              
+                            <div class="previous" data-previous-cursor="images/left-chevron.pngss"></div>
+                            <div class="next" data-next-cursor="images/right-chevron.png"></div>
+                              
+                            <div class="links">
+                                <a href="1"></a>
+                                <a href="2"></a>
+                                <a href="3"></a>
+                            </div>
+                        </div><!--banner-->
+                    </div>
+                    <div class="col span_1_of_3">
+                        <h4 class="form-header"><b>Request a free 15 minute consultation</b></h4>
+                        <div class="wpforms-container-full">
+                            <form action="" method="post" class="wpforms-form">
+                                <input type="text" name="name" id="" placeholder="Name">
+                                <input type="email" name="email" id="" placeholder="email">
+                                <input type="text" name="subject" id="" placeholder="subject">
+                                <textarea name="message" id="" cols="30" rows="10" placeholder="Message">
+                                    </textarea>
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+                
             </div>
 
             <!-- Second card -->
             <div class="card">
-                <div class="section group">
-                    <div class="col span_1_of_2">
-                        <h3>Proven Success: <br> 90% grade improvement; <br> 75% higher test scores</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro alias voluptas maxime libero officiis aliquam, iure asperiores, delectus pariatur dolore hic quos harum nulla aspernatur consequatur temporibus facilis assumenda inventore?</p>
+                <div class="section group ">
+                    <div class="col span_1_of_2 ">
+                        <div class="section group article-header">
+                            <div class="col span_1_of_2_lit">
+                                <h3>Proven Success: <br> 90% grade improvement; <br> 75% higher test scores</h3>
+                            </div>
+                            <div class="col span_2_of_2_lit">
+                                <i class="fas fa-check-circle header-icon" ></i>
+                            </div> 
+                        </div>
+                          
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro alias voluptas maxime 
+                            libero officiis aliquam, iure asperiores, delectus pariatur dolore hic quos harum 
+                            nulla aspernatur consequatur temporibus facilis assumenda inventore?</p>
                     </div>
             
                     <div class="col span_1_of_2">
-                        <h3>Different Students Require Different Approaches to Learning</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi reprehenderit quidem nesciunt iste vel exercitationem iure illum. Quaerat officiis perspiciatis quod quam? Quaerat animi suscipit modi amet quod commodi.</p>
+                        <div class="section group article-header">
+                            <div class="col span_1_of_2_lit">
+                                <h3>Different Students <br> Require Different <br> Approaches to 
+                                    Learning</h3>
+                            </div>
+                            <div class="col span_2_of_2_lit">
+                                <i class="fas fa-code-branch header-icon"></i>
+                            </div> 
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi 
+                            reprehenderit quidem nesciunt iste vel exercitationem iure illum. Quaerat officiis 
+                            perspiciatis quod quam? Quaerat animi suscipit modi amet quod commodi.</p>
                     </div>
                 </div>
                 <div class="section group">
                         <div class="col span_1_of_2">
-                            <h3>Individualized, Customized ​Learning ​Plans</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro alias voluptas maxime libero officiis aliquam, iure asperiores, delectus pariatur dolore hic quos harum nulla aspernatur consequatur temporibus facilis assumenda inventore?</p>
+                            <div class="section group article-header">
+                                <div class="col span_1_of_2_lit">
+                                    <h3>Individualized,<br> Customized <br> ​Learning ​Plans</h3>
+                                </div>
+                                <div class="col span_2_of_2_lit">
+                                    <i class="fas fa-chalkboard header-icon" ></i>
+                                </div> 
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro alias voluptas 
+                                maxime libero officiis aliquam, iure asperiores, delectus pariatur dolore hic 
+                                quos harum nulla aspernatur consequatur temporibus facilis assumenda inventore?
+                            </p>
                         </div>
                         <div class="col span_1_of_2">
-                            <h3>Top College Entrance Exam Prep</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi reprehenderit quidem nesciunt iste vel exercitationem iure illum. Quaerat officiis perspiciatis quod quam? Quaerat animi suscipit modi amet quod commodi.</p>
+                            <div class="section group article-header">
+                                <div class="col span_1_of_2_lit">
+                                    <h3>Top College <br> Entrance <br> Exam Prep</h3>
+                                </div>
+                                <div class="col span_2_of_2_lit">
+                                    <i class="fas fa-pencil-ruler header-icon" ></i>
+                                </div> 
+                            </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi 
+                                reprehenderit quidem nesciunt iste vel exercitationem iure illum. Quaerat 
+                                officiis perspiciatis quod quam? Quaerat animi suscipit modi amet quod 
+                                commodi.</p>
                         </div>
                     </div>             
-            </div>
+            </div><!--second card-->
 
             <div class="card">
-                <h2>TESTIMONIALS</h2>
+                <h2 class="testimonials-header">TESTIMONIALS</h2>
                 <div class="section group">
                     <div class="col span_1_of_4">
                     <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rerum exercitationem 
@@ -77,23 +157,24 @@
                     <i>&mdash; You know who I am</i>
                     </div>
                     <div class="col span_1_of_4">
-                    <q>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat ut perferendis 
-                    accusantium exercitationem veniam temporibus sit dolorem reprehenderit, aliquid, libero 
-                    nostrum doloribus earum possimus consequatur et neque obcaecati distinctio. Animi!
+                    <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rerum exercitationem 
+                        ducimus blanditiis ratione porro culpa eaque delectus vel eligendi dolores tempora,
+                        voluptatum sed tempore quidem. Nisi illo sed ipsum.</q>
                     <br><br>
                     <i>&mdash; I'm blessed</i>
                     </div>
                     <div class="col span_1_of_4">
-                    <q>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam omnis aperiam tenetur 
-                        ut, enim itaque laboriosam adipisci dolores explicabo minus culpa dolor vitae cum 
-                        recusandae dignissimos autem sapiente quasi similique. </q>
+                    <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rerum exercitationem 
+                        ducimus blanditiis ratione porro culpa eaque delectus vel eligendi dolores tempora,
+                        voluptatum sed tempore quidem. Nisi illo sed ipsum.</q>
                         <br><br>
                         <i>&mdash; Mystical panza</i>
                     </div>
                     <div class="col span_1_of_4">
-                    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deleniti molestias a ea 
-                    laboriosam necessitatibus magni, fuga nobis explicabo! Laborum, autem temporibus doloribus 
-                    adipisci impedit dolore expedita quo officiis natus?</q> <br><br>
+                    <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rerum exercitationem 
+                        ducimus blanditiis ratione porro culpa eaque delectus vel eligendi dolores tempora,
+                        voluptatum sed tempore quidem. Nisi illo sed ipsum.</q>
+                    <br><br>
                     <i>&mdash; Mercy Me from Wonderland</i>
                     </div>
                 </div>
@@ -121,14 +202,15 @@
                 </div>
                 <div class="fakeimg" >
                     <h3>Have you checked out the new UNEB curriculum yet?</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, ullam! Optio 
-                        veritatis officiis rem harum culpa illum dignissimos labore ullam animi, repudiandae 
-                        quod explicabo ex, inventore exercitationem? Eveniet, optio non.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis vel debitis     
+                        inventore quam repellendus est impedit itaque omnis officiis recusandae? Ullam numquam  
+                        aspernatur nostrum quia possimus, laboriosam dolorum enim necessitatibus.</p>
                 </div>
                 <div class="fakeimg" >
                     <h3>Encourage your child to try these competitions</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, est? Cumque eaque saepe     distinctio reprehenderit nam neque, nihil debitis alias non sint hic, eum quisquam  
-                        doloremque libero esse officiis atque!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis vel debitis     
+                        inventore quam repellendus est impedit itaque omnis officiis recusandae? Ullam numquam  
+                        aspernatur nostrum quia possimus, laboriosam dolorum enim necessitatibus.</p>
                 </div>
             </div>
             <div class="card">
@@ -145,5 +227,5 @@
     </div><!-- footer -->
     
 </body>
-
+<script src="js/slider.js"></script>
 </html>

@@ -61,6 +61,11 @@
     background-color: #ddd;
     color: black;
   }
+
+  .topnav a.active {
+    color: black;
+    background-color: #ddd;
+  }
   
   /* Create two unequal columns that floats next to each other */
   /* Left column */
@@ -128,6 +133,11 @@
   font-size: 2em;
 }
 
+.beautify {
+  color: black;
+  vertical-align: middle;
+}
+
 /*  SECTIONS  */
 .section {
 	clear: both;
@@ -167,11 +177,24 @@
 .span_1_of_2 {
 	width: 49.2%;
 }
+.span_1_of_2_lit {
+	width: 64.54%;
+}
+
+.span_2_of_2_lit {
+  width: 32.26%;
+}
+
+.span_1_of_1 {
+  width: 100%;
+}
+.span_2_of_3 { width: 64.54%; }
+.span_1_of_3 { width: 32.26%; }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
 	.col {  margin: 1% 0 1% 0%; }
-	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4, .span_1_of_2 { width: 100%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4, .span_1_of_2, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
 .col span {
@@ -179,4 +202,48 @@
   bottom: 0;
   right: 0;
 }
+
+/* Space the form fiels */
+input { margin-bottom: 10px; }
+
+.form-header, .article-header {
+  padding: 3px;
+  border-top: solid 2px;
+  border-bottom: solid 1px;
+}
+
+.header-icon {
+  float: right;
+  font-size: 100px;
+}
+
+.testimonials-header {
+  background: black;
+  padding: 10px;
+  color: white;
+}
+
+.faq-header {
+  border-top: solid 2px;
+  border-bottom: solid 1px;
+  padding: 15px;
+}
+
+.testimonial {
+  margin-top: 30px;
+}
+
+.sign-up {
+  color: white;
+  background-color: black;
+  padding: 10px; 
+}
+
+#wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
